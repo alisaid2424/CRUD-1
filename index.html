@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/master.css">
+    <style>body{font-family: Arial, Tahoma;}</style>
+</head>
+<body class="bg-dark">
+<section>
+    <div class="container py-2 ">
+        <div class="curd-input">
+            <h1 class="bg-danger rounded text-light mb-4 text-center p-2 text-uppercase">CRUD Operation System</h1>
+            <div class="row">
+                <div class="col-md-6  py-2">
+                    <label class="text-uppercase text-light fw-bold " for="prodectInputName">prodect Name:</label>
+                    <input type="text" class="form-control bg-transparent text-danger mb-2  inputA" id="prodectInputName">
+                </div>
+                <div class="col-md-6  py-2">
+                    <label class="text-uppercase text-light fw-bold " for="prodectInputCategure">prodect Categure:</label>
+                    <input type="text" class="form-control bg-transparent text-danger mb-2  inputA" id="prodectInputCategure">
+                </div>
+                <div class="col-md-4  py-2">
+                    <label class="text-uppercase text-light fw-bold " for="prodectInputPrice">prodect Price:</label>
+                    <input type="number" class="form-control bg-transparent text-danger mb-2  inputA" id="prodectInputPrice">
+                </div>
+                <div class="col-md-4  py-2">
+                    <label class="text-uppercase text-light fw-bold " for="prodectInputDiscount">prodect Discount:</label>
+                    <input type="number" class="form-control bg-transparent text-danger mb-2  inputA" id="prodectInputDiscount">
+                </div>
+                <div class="col-md-4  py-2">
+                    <label class="text-uppercase text-light fw-bold " for="prodectInputQuantity">prodect Quantity:</label>
+                    <input type="number"   class="form-control bg-transparent text-danger mb-2  inputA" id="prodectInputQuantity">
+                </div>
+                <div class="col-12  py-2">
+                    <label class="text-uppercase text-light fw-bold " for="prodectInputDiscription">prodect Discription:</label>
+                    <textarea name="Discription" id="prodectInputDiscription" class="form-control bg-transparent text-danger mb-2  inputA" rows="5"></textarea>
+                </div>
+                <div class="col-md-6  py-2">
+                    <button class=" btn btn-outline-success add">Add Prodect</button>
+                    <button class=" btn btn-outline-info d-none update">Update Prodect</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container py-2 ">
+        <label class=" mb-2 text-light fw-bold " for="prodectInputSearch">Search:</label>
+        <input type="search" class="form-control bg-transparent text-danger mb-2 p-3  inputA"  id="prodectInputSearch">
+        <table class="table text-center table-striped table-hover table-dark">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Categure</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Quantity</th>
+                    <th>Discription</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="dataShow">
+                
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
